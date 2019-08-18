@@ -24,8 +24,8 @@ public class AppTest{
 		LinkedList list = new LinkedList(); 
 		LinkedList list1 = new LinkedList(); 
 		
-		list=App.readData("prueba.txt",list);
-		list1=App.readData("prueba1.txt",list1);
+		list=App.readData("prueba.txt");
+		list1=App.readData("prueba1.txt");
 		
 		try {
 			assertEquals(App.mean(list),60.32,2);
@@ -48,7 +48,7 @@ public class AppTest{
     {
 		LinkedList list = new LinkedList(); 
 		
-		list=App.readData("prueba.txt",list);
+		list=App.readData("prueba.txt");
 		
 		// Print the LinkedList 
 		list.printList(list); 

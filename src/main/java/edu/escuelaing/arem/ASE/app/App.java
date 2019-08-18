@@ -65,7 +65,8 @@ public class App
 	 * @throws FileNotFoundException when the file does not exist
 	 * @throws IOException when an I/O error occurs
 	 * @return the linkedList with the values from the file**/
-	public static LinkedList readData(String file, LinkedList list) throws FileNotFoundException, IOException {
+	public static LinkedList readData(String file) throws FileNotFoundException, IOException {
+		LinkedList list = new LinkedList(); 
         String c;
         FileReader f = new FileReader(file);
         BufferedReader b = new BufferedReader(f);
@@ -81,7 +82,7 @@ public class App
 		
 		LinkedList list = new LinkedList(); 
 		
-		list=readData("prueba.txt",list);
+		list=readData("prueba.txt");
 		
 		// Print the LinkedList 
 		list.printList(list); 
